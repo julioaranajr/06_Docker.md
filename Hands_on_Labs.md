@@ -1,5 +1,5 @@
 # Hands-On: Introduction to Containers (Docker and Minikube)
-> **Tasks:
+**Tasks:**
 
 > - Task 0: Prerequisites
 > - Task 1: Run simple containers
@@ -67,7 +67,7 @@ Docker rmi <image name>
 You can create an image for your application by using Dockerfile. It contains a list of 
 instructions to build images such as installing a package, downloading source code, using a base image.
 
-1.- Create a new folder:**
+1.- Create a new folder:
 ```sh
 mkdir web-image
 cd web-image
