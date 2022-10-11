@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Docker-Container-Lab</title>
+    <style>
+        table.GeneratedTable {
+            width: 100%;
+            background-color: #ffffff;
+            border-collapse: collapse;
+            border-width: 2px;
+            border-color: #ffcc00;
+            border-style: solid;
+            color: #000000;
+            }
+    
+        table.GeneratedTable td, table.GeneratedTable th {
+            border-width: 2px;
+            border-color: #ffcc00;
+            border-style: solid;
+            padding: 3px;
+            }
+    
+        table.GeneratedTable thead {
+            background-color: #ffcc00;
+            }
+    </style>
+    
+    <script>
+        function clickCounter() {
+            if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+            localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+            } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <h2>This is a Talent-Academy Exercise</h2>
+<table class="GeneratedTable">
+    <thead>
+    <tr>
+        <th>Example # 1</th>
+        <th>Example # 2</th>
+        <th> Aditional Information:</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>Click in the button to test></td>
+        <td>Click in the button to get you Location</td>
+        <td>JULIOARANA/Nginx:1.0</td>
+    </tr>
+    <tr>
+        <td><p><button onclick="clickCounter()" type="button">Click me!</button></p>
+            <div id="result"></div>
+            <p>Click the button to see the counter increase.</p>
+            <p>Close the browser tab (or window), and try again,</p> 
+            <p>and the counter will continue to count (is not reset).</p></td>
+        <td><p>Click the button to get your coordinates.</p>
+            <button onclick="getLocation()">Try It</button>
+            <p id="demo"></p>
+            <script>
+            var x = document.getElementById("demo");
+                function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                    } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+                function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                        "<br>Longitude: " + position.coords.longitude;
+            }
+            </script></td>
+        <td><p>OS/ARCH:</p> 
+            <p>Linux/arm64/v8</p>
+            <p>COMPRESSED SIZE:
+            <p>73.15 MB</p>  
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
