@@ -37,8 +37,9 @@ a secure repository.
 [Docker Documentation](https://docs.docker.com/desktop/mac/install/)
 
 Then launch the Docker app and confirm your password for privileged access. (Might need a restart)
+
+### Run Docker Desktop Application
 ```bash
-# Run Docker Desktop Application
 open /Applications/Docker.app
 ```
 
@@ -46,15 +47,15 @@ open /Applications/Docker.app
 
 1. Check if Docker was installed successfully:
 
+### Chech your Version
 ```bash
-# Chech your Version
 docker version
 ```
 
 2. Run the following command:
 
+### Command to pull a image of nginx from Docker Hub
 ```bash
-# Command to pull a image of nginx from Docker Hub
 docker run -d -p 80:80 --name webserver nginx
 ```
 
@@ -66,21 +67,24 @@ You’ll notice a few flags being used. Here’s some more info on them:
 - -p 80:80 - map port 80 of the host to port 80 in the container
 - nginx - the image to use
 
-3. Try to access a container on localhost:80 on your machine: http://127.0.0.1:80/.
+
+3. Try to access a container on localhost:80 on your machine: http://127.0.0.1:80/
+
 
 4. Check how long it will take to start a new container with a new image:
 
+### Run this command to create a new container
 ```bash
-# Run this command to create a new container
 docker run -d -p 8080:80 --name webserver2 nginx
 ```
 
 The image was downloaded already, so this container started faster.
 
+
 5. You can run bash commands inside a Linux container:
 
-```bash
 # This command open an interactive console in the container
+```bash
 docker exec -it webserver /bin/bash
 ```
 
@@ -88,29 +92,50 @@ docker exec runs a command in a running container and the switch -it opens an in
 
 6. Stop containers and remove the image:
 
+### command to STOP containers before remove it
+
 ```bash
-# command to STOP containers before remove it
 docker stop webserver
+```
+
+```bash
 docker stop webserver2
+```
+
 # command to REMOVE containers
+
+```bash
 docker rm webserver
+```
+
+```bash
 docker rm webserver2
+```
+
 # command to REMOVE IMAGES in Docker Hub
+
+```bash
 docker rmi webserver
+```
+
+```bash
 docker rmi webserver2
 ```
 
-## <a name="Task_2"></a>Task 2: Package your custom application using Docker
+## Package your custom application using Docker
 
 You can create an image for your application by using Dockerfile. It contains a list of instructions 
 to build images such as installing a package, downloading source code, using a base image.
 
 1. Create a new folder:
 
+### create the directory
 ```bash
-# create the directory
 mkdir web-image
+```
+
 # access to the directory
+```bash
 cd web-image
 ```
 Create a file for the example website:
@@ -130,6 +155,10 @@ EOF
 3. Create a Dockerfile and add the following:
 
 **Dockerfile** is a text file that contains a list of instructions needed to build a given image. For example: install a package, download source code, use a base image.
+
+```bash
+code Dockerfile
+```
 
 ```dockerfile
 FROM ubuntu
@@ -159,13 +188,17 @@ docker build -t <image-name> --tag <yourusername>/<image-name>:1.0 .
 
 5. (Optional) Push your image to Docker Hub
 
+### List local images:
 ```bash
-# List local images:
 docker images
+```
 
 # Log in to Docker Hub:
+```bash
 docker login --username <yourusername>
+```
 
 # Push the image to your repository in Docker Hub:
+```bash
 docker push <yourusername>/<image-name>:1.0
 ```
