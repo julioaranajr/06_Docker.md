@@ -1,5 +1,4 @@
-# 06_Docker.md
-Hand on Labs [Introduction to Containers]
+### Hand on Labs [Introduction to Containers]
 
 **Tasks**:
 - Task 0: Prerequisites
@@ -7,7 +6,7 @@ Hand on Labs [Introduction to Containers]
 - Task 2: Package your custom application using Docker
 - Task 3: Running your application on Kubernetes locally
 
-## Task 0: Prerequisites
+### Task 0: Prerequisites
 
 First, you need to install Docker.
 
@@ -102,7 +101,7 @@ docker stop webserver
 docker stop webserver2
 ```
 
-# command to REMOVE containers
+### command to REMOVE containers
 
 ```bash
 docker rm webserver
@@ -122,7 +121,7 @@ docker rmi webserver
 docker rmi webserver2
 ```
 
-## Package your custom application using Docker
+### Package your custom application using Docker
 
 You can create an image for your application by using Dockerfile. It contains a list of instructions 
 to build images such as installing a package, downloading source code, using a base image.
@@ -134,7 +133,7 @@ to build images such as installing a package, downloading source code, using a b
 mkdir web-image
 ```
 
-# access to the directory
+### access to the directory
 ```bash
 cd web-image
 ```
@@ -193,12 +192,12 @@ docker build -t <image-name> --tag <yourusername>/<image-name>:1.0 .
 docker images
 ```
 
-# Log in to Docker Hub:
+### Log in to Docker Hub:
 ```bash
 docker login --username <yourusername>
 ```
 
-# Push the image to your repository in Docker Hub:
+### Push the image to your repository in Docker Hub:
 ```bash
 docker push <yourusername>/<image-name>:1.0
 ```
