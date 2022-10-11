@@ -148,7 +148,6 @@ code index.html
 <p>This is a Talent-Academy Exercise</p>
 </body>
 </html>
-EOF
 ```
 
 3. Create a Dockerfile and add the following:
