@@ -1,11 +1,11 @@
 # 06_Docker.md
 Hand on Labs [Introduction to Containers]
 
-> **Tasks**:
-> - Task 0: Prerequisites
-> - Task 1: Run simple containers
-> - Task 2: Package your custom application using Docker
-> - Task 3: Running your application on Kubernetes locally
+**Tasks**:
+- Task 0: Prerequisites
+- Task 1: Run simple containers
+- Task 2: Package your custom application using Docker
+- Task 3: Running your application on Kubernetes locally
 
 ## Task 0: Prerequisites
 
