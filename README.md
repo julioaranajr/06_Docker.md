@@ -1,4 +1,4 @@
-### Hand on Labs [Introduction to Containers]
+Hand on Labs [Introduction to Containers]
 
 **Tasks**:
 - Task 0: Prerequisites
@@ -6,11 +6,11 @@
 - Task 2: Package your custom application using Docker
 - Task 3: Running your application on Kubernetes locally
 
-### Task 0: Prerequisites
+Task 0: Prerequisites
 
 First, you need to install Docker.
 
-### Install Docker Desktop on Mac
+Install Docker Desktop on Mac
 
 Docker Desktop is an easy-to-install application for your Mac, Linux, or Windows environment 
 that enables you to build and share containerized applications and microservices.
@@ -37,23 +37,23 @@ a secure repository.
 
 Then launch the Docker app and confirm your password for privileged access. (Might need a restart)
 
-### Run Docker Desktop Application
+Run Docker Desktop Application
 ```bash
 open /Applications/Docker.app
 ```
 
-### Run a simple nginx container
+Run a simple nginx container
 
 1. Check if Docker was installed successfully:
 
-### Chech your Version
+Chech your Version
 ```bash
 docker version
 ```
 
 2. Run the following command:
 
-### Command to pull a image of nginx from Docker Hub
+Command to pull a image of nginx from Docker Hub
 ```bash
 docker run -d -p 80:80 --name webserver nginx
 ```
@@ -72,7 +72,7 @@ You’ll notice a few flags being used. Here’s some more info on them:
 
 4. Check how long it will take to start a new container with a new image:
 
-### Run this command to create a new container
+Run this command to create a new container
 ```bash
 docker run -d -p 8080:80 --name webserver2 nginx
 ```
@@ -82,16 +82,16 @@ The image was downloaded already, so this container started faster.
 
 5. You can run bash commands inside a Linux container:
 
-### This command open an interactive console in the container
+This command open an interactive console in the container
 ```bash
 docker exec -it webserver /bin/bash
 ```
 
-docker exec runs a command in a running container and the switch -it opens an interactive console
+Docker exec runs a command in a running container and the switch -it opens an interactive console
 
 6. Stop containers and remove the image:
 
-### command to STOP containers before remove it
+Command to STOP containers before remove it
 
 ```bash
 docker stop webserver
@@ -101,7 +101,7 @@ docker stop webserver
 docker stop webserver2
 ```
 
-### command to REMOVE containers
+Command to REMOVE containers
 
 ```bash
 docker rm webserver
@@ -111,7 +111,7 @@ docker rm webserver
 docker rm webserver2
 ```
 
-### command to REMOVE IMAGES in Docker Hub
+Command to REMOVE IMAGES in Docker Hub
 
 ```bash
 docker rmi webserver
@@ -121,19 +121,19 @@ docker rmi webserver
 docker rmi webserver2
 ```
 
-### Package your custom application using Docker
+Package your custom application using Docker
 
 You can create an image for your application by using Dockerfile. It contains a list of instructions 
 to build images such as installing a package, downloading source code, using a base image.
 
 1. Create a new folder:
 
-### create the directory
+Create the directory
 ```bash
 mkdir web-image
 ```
 
-### access to the directory
+Access to the directory
 ```bash
 cd web-image
 ```
@@ -187,17 +187,17 @@ docker build -t <image-name> --tag <yourusername>/<image-name>:1.0 .
 
 5. (Optional) Push your image to Docker Hub
 
-### List local images:
+List local images:
 ```bash
 docker images
 ```
 
-### Log in to Docker Hub:
+Log in to Docker Hub:
 ```bash
 docker login --username <yourusername>
 ```
 
-### Push the image to your repository in Docker Hub:
+Push the image to your repository in Docker Hub:
 ```bash
 docker push <yourusername>/<image-name>:1.0
 ```
