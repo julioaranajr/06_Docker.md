@@ -82,7 +82,7 @@ The image was downloaded already, so this container started faster.
 
 5. You can run bash commands inside a Linux container:
 
-# This command open an interactive console in the container
+### This command open an interactive console in the container
 ```bash
 docker exec -it webserver /bin/bash
 ```
@@ -111,7 +111,7 @@ docker rm webserver
 docker rm webserver2
 ```
 
-# command to REMOVE IMAGES in Docker Hub
+### command to REMOVE IMAGES in Docker Hub
 
 ```bash
 docker rmi webserver
