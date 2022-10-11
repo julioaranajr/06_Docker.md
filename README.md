@@ -21,13 +21,13 @@ images directly from your machine without having to use the CLI to perform core 
 
 What's included in Docker Desktop?
 What are the key features of Docker Desktop?
-       - Docker Engine
-       - Docker CLI client
-       - Docker Buildx
-       - Docker Compose
-       - Docker Content Trust
-       - Kubernetes
-       - Credential Helper
+> - Docker Engine
+> - Docker CLI client
+> - Docker Buildx
+> - Docker Compose
+> - Docker Content Trust
+> - Kubernetes
+> - Credential Helper
 
 Docker Desktop works with your choice of development tools and languages and gives you access 
 to a vast library of certified images and templates in Docker Hub. This enables development teams 
