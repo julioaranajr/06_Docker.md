@@ -2,12 +2,12 @@
 Hand on Labs [Introduction to Containers]
 
 > **Tasks**:
-> - [Task 0: Prerequisites](#Task_0)
-> - [Task 1: Run simple containers](#Task_1)
-> - [Task 2: Package your custom application using Docker](#Task_2)
-> - [Task 3: Running your application on Kubernetes locally](#Task_3)
+> - Task 0: Prerequisites
+> - Task 1: Run simple containers
+> - Task 2: Package your custom application using Docker
+> - Task 3: Running your application on Kubernetes locally
 
-## <a name="task0"></a>Task 0: Prerequisites
+## Task 0: Prerequisites
 
 First, you need to install Docker.
 
@@ -20,14 +20,14 @@ It provides a simple interface that enables you to manage your containers, appli
 images directly from your machine without having to use the CLI to perform core actions.
 
 What's included in Docker Desktop?
-What are the key features of Docker Desktop?
-> - Docker Engine
-> - Docker CLI client
-> - Docker Buildx
-> - Docker Compose
-> - Docker Content Trust
-> - Kubernetes
-> - Credential Helper
+- What are the key features of Docker Desktop?
+       - Docker Engine
+       - Docker CLI client
+       - Docker Buildx
+       - Docker Compose
+       - Docker Content Trust
+       - Kubernetes
+       - Credential Helper
 
 Docker Desktop works with your choice of development tools and languages and gives you access 
 to a vast library of certified images and templates in Docker Hub. This enables development teams 
