@@ -1,6 +1,6 @@
 # 
-My Profile in DockerHub
-[My-Docker-Hub-Profile](https://hub.docker.com/u/julioarana)
+Visita my profile in:
+[My-Docker-Hub](https://hub.docker.com/u/julioarana)
 
-My Repositories
-[My-Repositories]()
+Pull and Test My Repositories in:
+[DockerHub-Repositories]()
