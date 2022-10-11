@@ -20,7 +20,7 @@ It provides a simple interface that enables you to manage your containers, appli
 images directly from your machine without having to use the CLI to perform core actions.
 
 What's included in Docker Desktop?
-- What are the key features of Docker Desktop?
+What are the key features of Docker Desktop?
        - Docker Engine
        - Docker CLI client
        - Docker Buildx
