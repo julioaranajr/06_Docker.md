@@ -178,7 +178,7 @@ Run `docker image build` command to create a new Docker image using the instruct
 - `--tag` allows us to give the image a custom name. It usually consists of your Docker Hub username, the application name, and a version.
 - `.` tells Docker to use the current directory as the build context
 
-:warning: :warning: Be sure to include the period (`.`) at the end of the command. :warning: :warning:
+**Be sure to include the period (`.`) at the end of the command.**
 
 ```bash
 docker build -t <image-name> --tag <yourusername>/<image-name>:1.0 .
